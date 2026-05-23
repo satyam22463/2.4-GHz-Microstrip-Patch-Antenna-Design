@@ -43,49 +43,7 @@ $$L = \frac{c}{2f_0\sqrt{\varepsilon_\text{eff}}} - 2\,\Delta L$$
 
 $$R_\text{in}(y_0) = R_\text{in}(0)\cos^2\!\left(\frac{\pi}{L}\,y_0\right)$$
 
----
 
-## Simulation Results
-
-### S₁₁ Return Loss
-Deep resonance dip of **−35.76 dB** at 2.3884 GHz — less than 0.03% of incident power is reflected.
-
-![S11 Plot](figures/s11_plot.png)
-
-### VSWR
-Drops to **1.11** at the resonant dip and **1.26** at the 2.4 GHz design marker, confirming near-perfect 50 Ω matching.
-
-![VSWR Plot](figures/vswr_plot.png)
-
-### Input Impedance Z(1,1)
-Magnitude peaks at ~63 Ω near resonance; the reactive component $X_\text{in}$ crosses zero exactly at the true resonant frequency.
-
-![Impedance Plot](figures/impedance_plot.png)
-
-### 3D Radiation Pattern
-Peak gain of **2.81 dBi** directed along the broadside (+Z) axis. Symmetric single-lobe profile confirms well-managed surface wave losses.
-
-![Radiation Pattern](figures/radiation_pattern.png)
-
----
-
-## File Structure
-
-```
-.
-├── README.md
-├── patch_antenna.tex          # Full LaTeX report
-├── hfss/
-│   └── patch_antenna.aedt    # Ansys HFSS project file
-└── figures/
-    ├── antenna_geometry.png
-    ├── s11_plot.png
-    ├── vswr_plot.png
-    ├── impedance_plot.png
-    └── radiation_pattern.png
-```
-
----
 
 ## Tools Used
 
